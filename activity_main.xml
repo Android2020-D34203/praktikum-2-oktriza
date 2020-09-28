@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80DEEA"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editAngka1"
+        android:layout_width="380dp"
+        android:layout_height="62dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="    Bilangan pertama"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <EditText
+        android:id="@+id/editAngka2"
+        android:layout_width="378dp"
+        android:layout_height="59dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="    Bilangan kedua"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAngka1"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/operator"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:background="#F6F4F4"
+        android:ems="10"
+        android:hint="   Operasi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAngka2"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/tombol"
+        android:layout_width="140dp"
+        android:layout_height="61dp"
+        android:onClick="Hitung"
+        android:text="Hitung"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHasil"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/textHasil"
+        android:layout_width="342dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:text="  Hasil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Oktrizagita J.K (6701184028)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tombol"
+        app:layout_constraintVertical_bias="0.546" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
